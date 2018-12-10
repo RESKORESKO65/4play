@@ -17,7 +17,7 @@ client.on('ready', () => {
     client.user.setStatus("idle")
 });
 //by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-const prefix = "4"
+const prefix = "."
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
@@ -209,8 +209,8 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 
-const adminprefix = "4";//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-const devs = ['431150885549113344'];//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+const adminprefix = ".";//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+const devs = ['521001769082552335'];//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 client.on('message', message => {//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
   var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
     if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
@@ -236,7 +236,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.on("message", message => {
- if (message.content === `Phelp`) {
+ if (message.content === `.help`) {
   const embed = new Discord.RichEmbed() //by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
       .setColor("#000000")//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
       .setDescription(`
